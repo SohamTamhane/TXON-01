@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+
+    animation: nav-load 600ms ease-in-out;
+}
+
+.website-name{
+    color: #d591ff;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.website-name:hover{
+    cursor: pointer;
+}
+
+.left-nav ul{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.left-nav ul li{
+    padding: 8px;
+}
+
+.left-nav ul li a:hover{
+    color: #b8a5f8;
+}
+
+
+#account-circle{
+    width: 35px;
+    padding-right: 6px;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.login-btn:hover{
+    cursor: pointer;
+}
+
+.svg-logo{
+    padding-right: 10px;
+}
+
+.svg-logo:hover{
+    cursor: pointer;
+}
+
+#yt-logo:hover{
+    color: red;
+}
+
+#instagram-logo:hover{
+    color: #e463ed;
+}
+
+#fb-logo:hover{
+    color: rgb(79, 63, 255);
+}
+
+.section-1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1{
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+#section-1-span{
+    font-family: 'Archivo Black', sans-serif;
+    padding-left: 60px;
+    font-size: 35px;
+
+    animation: span-load 600ms ease-in-out;
+}
+
+#fitness-studio{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+}
+
+#book-btn{
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #5e3ad4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#book-btn:hover{
+    background-color: #9879ff;
+}
+
+.section-2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
+}
+
+.section-2-span{
+    display: block;
+    width: 40vw;
+    color: white;
+    font-size: 20px;
+}
+
+#section-2-heading{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    margin-bottom: 7px;
+}
+
+#section-2-span{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+}
+
+#read-more-btn{
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #5e3ad4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#read-more-btn:hover{
+    background-color: #9879ff;
+}
+
+.section-3{
+    width: 100vw;
+    height: 100vh;
+}
+
+.price-div{
+    width: 100vw;
+    height: 90vh;
+    background-image: url('images/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.price-card{
+    width: 20vw;
+    height: 50vh;
+    background-color: #030713;
+    color: white;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+}
+.price-card div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-text{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+}
+
+.span-text{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+}
+
+.select-btn{
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #5e3ad4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.select-btn:hover{
+    background-color: #9879ff;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    font-family: 'Kanit', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name-span{
+    background-color: #5e3ad4;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@keyframes nav-load {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes span-load {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
